@@ -1,35 +1,42 @@
-// import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
+import './Booking.css'
 
 const Booking = () => {
    
     const {serviceId} = useParams();
-    // const [information,setInformation] = useState([]);
-    // const [singleInformation,setsingleInformation] = useState({});
-    
+    const serviceid = parseInt(serviceId);
 
-     
-    // useEffect( ()=>{
-    //     fetch('/services.json')
-    //     .then(res => res.json())
-    //     .then(data => setInformation(data))
+    const [information,setInformation] = useState([]);
+    const [singleInformation,setSingleInformation] = useState({});
 
-    // },[])
+    
+   
+    useEffect( ()=>{
+        fetch('/services.json')
+            .then(res => res.json())
+            .then(data => setInformation(data))
+        // console.log(information);
+    }, []);
 
-      
-    // useEffect(()=>{
-    //     const foundInformation = information.find(information => information.id === serviceId)
-    //     setsingleInformation(foundInformation);
-    // },[information])
-    
-    
+    useEffect(()=>{
+        const getInfo = information.find((elemtent) => elemtent.id === serviceid);
+        console.log(getInfo);
+        setSingleInformation(getInfo);
+    },[information])
    
 
     return (
-        <div>
-            <h2>this is booking:{serviceId} </h2>
-            
+        <div className="item-center my-5">
 
+            <div className="card" style={{"width": "18rem"}}>
+                <img src={singleInformation?.img} class="card-img-top" alt="..."/>
+                <div className="card-body">
+                    <h4>{singleInformation?.name}</h4>
+                    <p className="card-text">{singleInformation?.description}</p>
+                </div>
+            </div>
+ 
         </div>
     );
 };

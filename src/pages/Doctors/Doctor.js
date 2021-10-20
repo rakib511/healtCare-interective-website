@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const Doctor = ({doctor}) => {
     const {name,img,desc,id,job} = doctor;
@@ -12,7 +12,7 @@ const Doctor = ({doctor}) => {
                         <h5 className="card-title">{name}</h5>
                         <h5>{job}</h5>
                         <p className="card-text">${desc}</p>
-                        <Link to={`/booking/${id}`}><button className='btn btn-success'>Contact :{name}</button></Link>
+                        {/* <Link to={`/booking/${id}`}><button className='btn btn-success'>Contact :{name}</button></Link> */}
                     </div>
                 </div>
             </div>

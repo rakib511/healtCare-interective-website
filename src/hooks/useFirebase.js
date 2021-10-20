@@ -12,14 +12,21 @@ const useFirebase = () =>{
     const auth = getAuth();
 
 
+// Email SignIn part
+    const handleEmailChange = () =>{
+
+    }
+    const handleEmailSignIn = e =>{
+        e.preventDefault();
+
+    }
+    // Google SignIn part
     const signInUsingGoogle =()=>{
         setIsLoading(true)
         const googleProvider = new GoogleAuthProvider();
-        signInWithPopup(auth, googleProvider)
-        .then(result=>{
-            setUser(result.user)
-        })
-        .finali(()=>setIsLoading(false));
+        return signInWithPopup(auth, googleProvider)
+        
+        .finally(()=>setIsLoading(false));
     }
 
     useEffect( () =>{
@@ -45,7 +52,9 @@ const useFirebase = () =>{
         user,
         signInUsingGoogle,
         logout,
-        isLoading
+        isLoading,
+        handleEmailSignIn,
+        handleEmailChange,
     }
 };
 export default useFirebase;

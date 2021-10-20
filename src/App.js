@@ -11,6 +11,7 @@ import NotFound from './pages/NotFound/NotFound';
 import Services from './pages/services/Services/Services';
 import Booking from './pages/Booking/Booking';
 import Login from './pages/Login/Login/Login';
+import Registration from './pages/Login/Login/Registration';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './pages/Login/PrivateRoute';
 
@@ -39,6 +40,9 @@ function App() {
               </Route>
               <Route path="/login">
                 <Login></Login>
+              </Route>
+              <Route path="/registar">
+                <Registration></Registration>
               </Route>
               
               <Route exact path="/">

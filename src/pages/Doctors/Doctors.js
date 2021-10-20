@@ -15,7 +15,7 @@ const Doctors = () => {
             <h6>MEEY OUR EXPERIANS DOCTORS</h6>
             <h1>WE ARE EXPART IN OUR FIELD</h1>
             <hr />
-            <div className="doctor-container row">
+            <div className="doctor-container row mx-5 my-5">
            {
                doctors.map(doctor => <Doctor
                key={doctor.id}

@@ -2,19 +2,33 @@
 import { useParams } from 'react-router';
 
 const Booking = () => {
+   
     const {serviceId} = useParams();
-    // const [info,setInfo] = useState([]);
+    // const [information,setInformation] = useState([]);
+    // const [singleInformation,setsingleInformation] = useState({});
+    
 
+     
     // useEffect( ()=>{
-    //     fetch('services.json')
+    //     fetch('/services.json')
     //     .then(res => res.json())
-    //     .then(data =>console.log(data))
+    //     .then(data => setInformation(data))
+
     // },[])
+
+      
+    // useEffect(()=>{
+    //     const foundInformation = information.find(information => information.id === serviceId)
+    //     setsingleInformation(foundInformation);
+    // },[information])
+    
+    
    
 
     return (
         <div>
             <h2>this is booking:{serviceId} </h2>
+            
 
         </div>
     );

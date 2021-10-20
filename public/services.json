@@ -1,0 +1,38 @@
+[
+    {
+      "name": "Outdoor Checkup",
+      "img": "https://i.ibb.co/1bT4Vt0/service1.jpg",
+      "description": "Proin nec lacus lacus. Sed vitae consectetur est, et mattis felis. Fusce lacinia nibh vitae fermentum finibus. Donec malesuada efficitur dapibus. Cras euismod nunc tellus, eget tempor purus.",
+      "id": 1
+    },
+    {
+      "name": "Operation Theater Service",
+      "img": "https://i.ibb.co/S7h1ccV/service2.jpg",
+      "description": "Proin nec lacus lacus. Sed vitae consectetur est, et mattis felis. Fusce lacinia nibh vitae fermentum finibus. Donec malesuada efficitur dapibus. Cras euismod nunc tellus, eget tempor purus.",
+      "id": 2
+    },
+    {
+      "name": "Emergency Care",
+      "img": "https://i.ibb.co/fMHBNv0/service3.jpg",
+      "description": "Proin nec lacus lacus. Sed vitae consectetur est, et mattis felis. Fusce lacinia nibh vitae fermentum finibus. Donec malesuada efficitur dapibus. Cras euismod nunc tellus, eget tempor purus.",
+      "id": 3
+    },
+    {
+      "name": "Blod Test",
+      "img": "https://i.ibb.co/yfSnR60/service4.jpg",
+      "description": "Proin nec lacus lacus. Sed vitae consectetur est, et mattis felis. Fusce lacinia nibh vitae fermentum finibus. Donec malesuada efficitur dapibus. Cras euismod nunc tellus, eget tempor purus.",
+      "id": 4
+    },
+    {
+      "name": "Pharmacy Support",
+      "img": "https://i.ibb.co/c27nFPy/service5.jpg",
+      "description": "Proin nec lacus lacus. Sed vitae consectetur est, et mattis felis. Fusce lacinia nibh vitae fermentum finibus. Donec malesuada efficitur dapibus. Cras euismod nunc tellus, eget tempor purus.",
+      "id": 5
+    },
+    {
+      "name": "Special Service",
+      "img": "https://i.ibb.co/jk1tJNB/service6.jpg",
+      "description": "Proin nec lacus lacus. Sed vitae consectetur est, et mattis felis. Fusce lacinia nibh vitae fermentum finibus. Donec malesuada efficitur dapibus. Cras euismod nunc tellus, eget tempor purus.",
+      "id": 6
+    }
+  ]
